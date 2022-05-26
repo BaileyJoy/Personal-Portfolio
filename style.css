@@ -1,0 +1,76 @@
+* {
+    background-color: #fef6e4;
+    z-index: 1;
+}
+/* Navigation bar */
+.navbar {
+    background-color: #fef6e4;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    list-style-type: none;
+}
+li {
+    z-index: 2;
+}
+
+li a {
+    background-color: fef6e4;
+    color: #001858;
+    text-decoration: none;
+    font-weight: bolder;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+}
+/* Main Header */
+h1  {
+    font-family: 'Raleway', sans-serif;
+    color: #001858;
+    font-size: 75px;
+    margin-left: 100px;
+    margin-bottom: 0%;
+    margin-right: 50px;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #001858;
+    font-size: 2em;
+    margin-left: 100px;
+    margin-top: 0%;
+}
+.intro {
+    display: block;
+    z-index: 3;
+} 
+
+/* Pink Blob and Self Picture */
+img.self-pic {
+    position: relative;
+    border-radius: 30%;
+    z-index: 5;
+    width: 410px;
+    height: 500px;
+    left: 1010px;
+    bottom: 180px;
+    padding-top: 0%;
+}
+ 
+path.blob {
+    position: absolute;
+    left: 600px;
+    top: 600px;
+    z-index: 1;
+    width: 900px;
+    height: 900px;
+ }
+
+svg {
+    z-index: 3;
+    position: absolute;
+   left: 670px;
+   top: 0px;
+   width: 1200px;
+   height: 1200px;
+   background-color: transparent;
+}
