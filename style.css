@@ -1,26 +1,26 @@
 * {
     background-color: #fef6e4;
-    z-index: 1;
 }
 /* Navigation bar */
 .navbar {
     background-color: #fef6e4;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
     list-style-type: none;
+    justify-content: space-around;
+    z-index: 3;
 }
-li {
-    z-index: 2;
+.navbar a:hover {
+    color: #f582ae;
 }
 
-li a {
-    background-color: fef6e4;
+.navbar a {
+    background-color: #fef6e4;
     color: #001858;
     text-decoration: none;
     font-weight: bolder;
-    display: flex;
     font-family: 'Raleway', sans-serif;
+    z-index: 3;
+    padding: 3px 3px;
 }
 /* Main Header */
 h1  {
@@ -45,21 +45,40 @@ h2 {
 } 
 
 /* Pink Blob and Self Picture */
-img.self-pic {
-    position: relative;
-    border-radius: 30%;
-    z-index: 5;
+.card {
+    border-radius: 10%;
+    z-index: 3;
     width: 410px;
     height: 500px;
     left: 1010px;
-    bottom: 180px;
+    bottom: 160px;
     padding-top: 0%;
+    outline: 2px solid rgba(255, 255, 255, .5);
+    outline-offset: -10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .1);
+    position: relative;
+    overflow: hidden;
+}
+.self-pic{
+    outline: 2px solid rgba(255, 255, 255, .5);
+    outline-offset: -10px;
+    border-radius: 10%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .1);
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .75s;
+}
+
+.card:hover .self-pic {
+    transform: scale(1.15);
 }
  
 path.blob {
     position: absolute;
     left: 600px;
-    top: 600px;
+    top: 800px;
     z-index: 1;
     width: 900px;
     height: 900px;
@@ -69,8 +88,16 @@ svg {
     z-index: 3;
     position: absolute;
    left: 670px;
-   top: 0px;
+   top: 50px;
    width: 1200px;
    height: 1200px;
    background-color: transparent;
+}
+p {
+    position: absolute;
+    bottom: 400px;
+    margin-left: 100px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    color:#001858;
 }
